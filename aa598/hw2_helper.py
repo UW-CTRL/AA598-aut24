@@ -1,9 +1,9 @@
 import jax.numpy as jnp
-import jax
-from cbfax.dynamics import *
+# import jax
+from dynamaxsys import *
 
 
-@jax.jit
+# @jax.jit
 def simulate_dynamics(dynamics, state, controls, dt):
     T = controls.shape[0]
     states = [state]
